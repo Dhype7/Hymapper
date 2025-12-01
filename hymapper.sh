@@ -476,8 +476,14 @@ show_scan_descriptions() {
 # Source Module Files
 ################################################################################
 
-# Get the directory where the script is located
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# Get the directory where the script is located (handles symlinks properly)
+if [ -L "${BASH_SOURCE[0]}" ]; then
+    # If script is a symlink, get the real path
+    SCRIPT_DIR="$( cd "$( dirname "$( readlink -f "${BASH_SOURCE[0]}" )" )" && pwd )"
+else
+    # If script is not a symlink, use normal method
+    SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
 # Source modules if they exist
 if [ -f "$SCRIPT_DIR/custom_scan_builder.sh" ]; then
