@@ -364,132 +364,17 @@ Unauthorized network scanning may be illegal in your jurisdiction. The creator a
 - 📄 Output Options (10+ formats: Normal, XML, Grepable, Script Kiddie, append, etc.)
 - ⚙️ Miscellaneous Options (10+ flags: IPv6, reason, DNS options, interface, etc.)
 
-### 3. Comprehensive Flag Descriptions
 
-- Detailed explanations for every Nmap flag
-- **Full command display** for all standard scans
-- Usage examples and best practices
-- Common scan combinations
-- Learning tips for beginners
-- Legal and ethical reminders
 
-### 4. NSE Scripts Guide (NEW!)
 
-Complete guide to Nmap Scripting Engine:
-- 📚 What are NSE Scripts? - Understanding the power of NSE
-- 🔍 How to Find Scripts - Local & online script discovery
-- 🎯 How to Use Scripts - Practical usage examples with arguments
-- 💡 Built-in Examples - 30+ ready-to-use script combinations
-- ✍️ Write Your Own - Step-by-step script development tutorial
-- 🔗 Resources - Official docs, GitHub repos, tutorials, and communities
 
-### 5. Target Configuration
 
-- IP address or hostname input with validation
-- Optional port specification (single, range, or comma-separated)
-- Persistent configuration throughout session
 
-## 📋 Requirements
 
-- **Operating System**: Kali Linux or similar penetration testing distribution
-- **Nmap**: Must be installed (`sudo apt install nmap`)
-- **Privileges**: Root/sudo access for most scan types
-- **Terminal**: Color-supporting terminal emulator
 
-## 🚀 Installation
 
-### Quick Install
 
-```bash
-cd /home/kali/My_Tools/Hymapper
-sudo bash install.sh
-```
 
-This will:
-1. Check for Nmap installation (install if missing)
-2. Create a system-wide executable at `/usr/local/bin/hymapper`
-3. Set proper permissions
-
-### Manual Installation
-
-```bash
-# Clone or download to your preferred location
-cd /home/kali/My_Tools/Hymapper
-
-# Make executable
-chmod +x hymapper.sh
-
-# Run locally
-sudo bash hymapper.sh
-```
-
-## 💻 Usage
-
-### System-wide (After Installation)
-
-```bash
-sudo hymapper
-```
-
-### Local Execution
-
-```bash
-sudo bash /path/to/hymapper.sh
-```
-
-### Basic Workflow
-
-1. **Enter Target**: Provide IP address or hostname
-2. **Specify Port** (Optional): Enter specific port(s) to scan
-3. **Choose Option**:
-   - Select pre-configured standard scan
-   - Build custom scan with flag builder
-   - View flag descriptions for learning
-4. **Execute Scan**: Let Nmap do its magic!
-5. **Review Results**: Analyze scan output
-
-## 📚 Examples
-
-### Example 1: Quick Basic Scan
-
-```
-1. Run: sudo hymapper
-2. Enter target: 192.168.1.1
-3. Press Enter to skip port specification
-4. Select option [1] - Standard Scans
-5. Choose [21] - Simple Scan (Default)
-```
-
-### Example 2: Custom Vulnerability Scan
-
-```
-1. Run: sudo hymapper
-2. Enter target: scanme.nmap.org
-3. Select option [2] - Build Your Own Scan
-4. Select [3] - Service/Version Detection → [1] -sV
-5. Select [4] - Script Scanning → [2] --script vuln
-6. Select [6] - Timing → [5] -T4
-7. Press [E] to execute
-```
-
-### Example 3: Stealth Scan on Specific Ports
-
-```
-1. Run: sudo hymapper
-2. Enter target: 10.0.0.5
-3. Enter ports: 22,80,443,8080
-4. Select option [1] - Standard Scans
-5. Choose [4] - Stealth SYN Scan with Script Scanning
-```
-
-## 🎓 Learning Path for Beginners
-
-1. **Start with BASIC SCANS** (21-25) to understand fundamentals
-2. **Move to FAST SCANS** (16-20) to learn about speed vs accuracy
-3. **Try MID SCANS** (11-15) for standard reconnaissance
-4. **Explore GOOD SCANS** (6-10) for balanced assessments
-5. **Use PRO SCANS** (1-5) when you need comprehensive results
-6. **Build Custom Scans** once comfortable with individual flags
 
 ## 🔒 Legal & Ethical Notice
 
@@ -542,7 +427,7 @@ Contributions are welcome! If you have ideas for improvements:
 ## 📧 Contact & Support
 
 - **Creator**: Dhype7
-- **GitHub**: github.com/Dhype7/Hymapper (if available)
+- **GitHub**: https://github.com/Dhype7/Hymapper
 - **Issues**: Report bugs and suggest features via GitHub Issues
 
 ## 📜 License
