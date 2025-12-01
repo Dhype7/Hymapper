@@ -1,0 +1,49 @@
+# Documentation files (not needed on GitHub)
+*.md
+!README.md
+
+# Test files
+test.sh
+
+# CSV output directory
+hymapper_scans/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache (if any future Python integration)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.env.local
+
+.VISUAL_SHOWCASE.txt
