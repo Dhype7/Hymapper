@@ -409,16 +409,7 @@ Contributions are welcome! If you have ideas for improvements:
 3. Make your changes
 4. Submit a pull request
 
-## 📝 Changelog
-
-### Version 1.0 (Initial Release)
-- ✅ 25 pre-configured standard scans
-- ✅ Custom scan builder with 9 flag categories
-- ✅ Comprehensive flag descriptions
-- ✅ Color-coded interactive interface
-- ✅ Target and port configuration
-- ✅ Installation script
-- ✅ Educational approach with detailed explanations
+detailed explanations
 
 ## 🐛 Known Issues
 
